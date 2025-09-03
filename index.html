@@ -180,9 +180,26 @@
             </div>
             <ul id="callHistoryList" class="mt-4 space-y-2 text-sm text-gray-700 "></ul>
           </aside>
+          <script>
+            function makeCall(number, service) {
+                // Simulate making a call
+                alert(`Calling ${service} at ${number}`);
+                
+                // Add to call history
+                const callHistoryList = document.getElementById('callHistoryList');
+                const listItem = document.createElement('li');
+                const timestamp = new Date().toLocaleString();
+                listItem.textContent = `${service} (${number}) - ${timestamp}`;
+                callHistoryList.prepend(listItem); // Add to the top of the list
+            }
 
+            function clearCallHistory() {
+                const callHistoryList = document.getElementById('callHistoryList');
+                callHistoryList.innerHTML = ''; // Clear the list
+            }
+          </script>
       </main>
 
-      
+
 </body>
 </html>
