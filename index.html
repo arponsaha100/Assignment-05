@@ -38,7 +38,7 @@
         <p class="text-sm">Government Emergency Services at Your Fingertip  A Project by  Government of the People's Republic of Bangladesh</p>
      </section>
     <!-- main section -->
-       <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+       <main class="flex max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
 
         <!-- card section -->
          <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -172,7 +172,17 @@
                 </div>
              
          </div>
-         
+         <!-- Call History -->
+          <aside class="bg-white shadow rounded-xl p-4">
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">Call History</h2>
+                <button onclick="clearCallHistory()" class="mt-4 space-y-2 text-sm text-gray-700 ">Clear</button>
+            </div>
+            <ul id="callHistoryList" class="mt-4 space-y-2 text-sm text-gray-700 "></ul>
+          </aside>
+
       </main>
+
+      
 </body>
 </html>
