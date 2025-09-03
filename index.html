@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM1u3Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKIY+KZ57nC2e5bMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 <body class="bg-green-50 font-sans">
     <!-- Navbar -->
@@ -37,6 +37,142 @@
         <h1 class="text-2xl font-bold">Emergency Service Directory</h1>
         <p class="text-sm">Government Emergency Services at Your Fingertip  A Project by  Government of the People's Republic of Bangladesh</p>
      </section>
+    <!-- main section -->
+       <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
 
+        <!-- card section -->
+         <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- service card -->
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/emergency.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">National Emergency Number</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">National Emergency</p>
+                    <p class="text-2xl font-bold my-2">999</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">All</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('999','National Emergency Number')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/police.png" alt="" class="bg-blue-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Police Helpline Number</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500"></p>
+                    <p class="text-2xl font-bold my-2">999</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">Police</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('999','Police Helpline Number')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/fire-service.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Fire Service Number</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Fire Service</p>
+                    <p class="text-2xl font-bold my-2">999</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">Fire</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('999','Fire Service Number')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/ambulance.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Ambulance Service</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Ambulance</p>
+                    <p class="text-2xl font-bold my-2">1994-999999</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">Health</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('1994-999999','Ambulance Service')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/emergency.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Women & Child Helpline</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Women & Child Helpline</p>
+                    <p class="text-2xl font-bold my-2">109</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">Help</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('109','Women & Child Helpline ')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/emergency.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Anti-Corruption Helpline</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Anti-Corruption</p>
+                    <p class="text-2xl font-bold my-2">106</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">Govt</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('106','Anti-Corruption Helpline')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/emergency.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Electricity Helpline</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Electricity Outage</p>
+                    <p class="text-2xl font-bold my-2">16216</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">Electricity</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('16216','Electricity Helpline')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/emergency.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Brac Helpline</h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Brac </p>
+                    <p class="text-2xl font-bold my-2">16445</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">NGO</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('16445','Brac Helpline')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             <div class="bg-white shadow rounded-xl p-4">
+                  <img src="assets/emergency.png" alt="" class="bg-red-100 p-1 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-bold">Bangladesh Railway Helpline </h2>
+                        <button class="text-gray-500">♡</button>
+                    </div>    
+                    <p class="text-sm text-gray-500">Bangladesh Railway</p>
+                    <p class="text-2xl font-bold my-2">163</p>
+                    <span class="px-2 bg-green-50 rounded-xl font-bold mb-3">All</span>
+                    <div class="flex gap-2">
+                       <button class="border px-4 py-2 rounded">Copy</button>
+                       <button onclick="makeCall('163','Bangladesh Railway Helpline')" class="bg-green-600 text-white px-4 py-1 rounded">Call</button>
+                    </div>
+                </div>
+             
+         </div>
+         
+      </main>
 </body>
 </html>
